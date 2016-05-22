@@ -1,0 +1,371 @@
+h5{
+  font-size: 1em;
+  font-family: verdana, sans-serif;
+  font-weight: 300;
+}
+.details{
+  text-align: left;
+
+}
+.give{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+.Uploadpic{
+	width:50%;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+#image-preview {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  background-color:transparent;
+  color: #000;
+}
+#image-label{
+  	margin: auto;
+  	font-size: 2em;
+  	display: block;
+  	margin-top: 3em;
+  	cursor: pointer;
+  	text-align: center;
+  	background-color:#727272;
+  	color: #fff;
+  	opacity: 0.5;
+}
+input[type="file"]{
+	opacity: 0;
+}
+.boxupload{
+	width:50%;
+	height: auto;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+input[type="text"].prodname
+{
+  display: block;
+  padding: 5px 5px;
+  font-size: 15px;
+  width: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.catchoice{
+  display: block;
+  padding: 5px 5px;
+  font-size: 15px;
+  width: 30%;
+  margin-bottom: 2%;
+}
+input[type="number"].quantity{
+  display: block;
+  padding: 5px 5px;
+  font-size: 15px;
+  margin-bottom: 2%;
+}
+
+textarea{
+	width:90%;
+	height:100px;
+	display: block;
+	padding: 12px 20px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+}
+.donate{
+	display: block;
+	width: 50%;
+	height: 2em;
+	border: 0;
+	background-color: #FF4511;
+	color: #fff;
+	font-size: 1em;
+}
+.donate:hover{
+	background-color: #FF5722;
+}
+
+/*requests*/
+.Requests{
+ float: left;
+ width: 20%;
+ height: 10em;
+ margin-top:10px;
+ margin-left: 2%;
+}
+.roll{
+   height: 400px;
+   overflow-y: scroll;
+}
+.roll::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.roll::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: #F5F5F5;
+
+}
+
+.roll::-webkit-scrollbar-thumb
+{
+  background-color: #0ae;
+  border-radius: 50px;
+}
+
+.takerdetails{
+  margin: 2%;
+  border-bottom: 1px solid #000;
+}
+.take{
+  width: 100%;
+}
+
+#accept{
+  padding: 5px;
+  display: inline-block;
+  width: 20%;
+  margin: 2%;
+  margin-left: 20%;
+  background-color: #FF4511;
+  color: #fff;
+  font-size: 1em;
+  border: 0;
+  cursor: pointer;
+}
+#accept:hover{
+  background-color: #FB3611;
+}
+.taker{
+  text-align:center;
+  color:#fff;;
+  background:#1b1e24;
+}
+
+/* details */
+.Prodname, .Imgholder, .Gprofile{
+  margin-top:10px;
+}
+.Prodname{
+  width:100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.product{
+  text-align:center;
+}
+.Imgholder{
+  width:40%;
+  height: auto;
+  float: left;
+  margin-left: 4%;
+  margin-bottom: 10%;
+}
+.Imgholder img{
+  border-radius: 0 !important;
+  width:100%;
+  height:440px;
+  margin: auto;
+}
+.Gprofile{
+  width:30%;
+  height: auto;
+  float: right;
+  margin-right: 1%;
+}
+.bot{
+  width: 100%;
+  height: auto;
+  float: left;
+}
+table{
+  margin: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  color:#fff;;
+  background:#1b1e24;
+  border-bottom:2px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  padding: 20px;
+  color:#000;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+
+tr:nth-child(odd) td {
+  background:#0288D1;
+}
+
+tr:nth-child(odd):hover td {
+  background:#212121;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+td:first-child {
+  font-size: 1.2em;
+}
+td:last-child {
+  border-right: 0px;
+}
+
+@media screen and (max-width: 640px){
+  .Prodname{
+  width:100%;
+  }
+  .product{
+  text-align:left;
+  }
+  .Imgholder{
+  width:100%;
+  margin: 0
+  display: block;
+  }
+  .Imgholder img{
+  border-radius: 0 !important;
+  width:80%;
+  height:300px;
+  }
+  .Gprofile{
+  width: 90%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  .Prodname{
+  width:100%;
+  }
+  .Imgholder{
+  width:40%;
+  height: auto;
+  float: left;
+  margin-left: 1%;
+  }
+  .Imgholder img{
+  border-radius: 0 !important;
+  width:100%;
+  height:300px;
+  margin: auto;
+  }
+  .Gprofile{
+  width:50%;
+  margin-right: 3%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .Prodname{
+  width:100%;
+  }
+  .Imgholder{
+  width:50%;
+  height: auto;
+  float: left;
+  margin-left: 1%;
+  }
+  .Imgholder img{
+  border-radius: 0 !important;
+  width:80%;
+  height:300px;
+  margin: auto;
+  }
+  .Gprofile{
+  width:40%;
+  margin-right: 3%;
+  }
+}
+
+
+
+/*end of details*/
+
+
+@media screen and (max-width: 720px){
+  .Uploadpic{
+  width:98%;
+  }
+  #image-preview {
+  width: 350px;
+  height: 350px;
+  }
+  #image-label{
+    font-size: 1.5em;
+  }
+  .boxupload{
+  width:98%;
+  }
+
+}
+@media screen and (min-width: 721px) and (max-width: 1024px){
+  .boxupload{
+  width:80%;
+  }
+}
+
+p#give{
+  font-size: 25px;
+  font-family: 'Helvetica';
+}

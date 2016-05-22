@@ -1,0 +1,167 @@
+h1, h2, h3, h4, h5, a{
+	font-family: 'Didact Gothic', sans-serif;
+}
+h1{
+	text-indent: 2em;
+	font-size: 2em;
+	margin: 2%;
+}
+h2{
+	text-indent: 1em;
+	font-size: 1.5em;
+}
+h3{
+	text-align: center;
+	font-size: 1.5em;
+}
+p{
+	text-indent: 1.2em;	
+	font-size: 1.2em;
+}
+.name{
+	opacity: 0.9px;
+}
+
+.Welcomelog{
+	float: left;
+	width:40%;
+	height:auto;
+}
+.logout{
+	width: 30%;
+	padding: 5px;
+	margin-top: 2%;
+	margin-left: 2em;
+}
+.search{
+	width:30%;
+	float: right;
+	height: 2.5em;
+	margin-right: 1%;
+}
+input[type=text].search {
+	width: 50%;
+	float: right;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: right;
+}
+input[type=text]:focus.search{
+    width: 100%;
+}
+img{
+	width: 80%;
+	height: 10em;
+	display: block;
+	margin-bottom: 2em;
+}
+.categories{
+	width: 90%;
+	height:	auto;
+	margin: auto;
+}
+.branch img{
+	width: 70%;
+	height: 70%;
+	display: block;
+	margin-bottom: 2em;
+}
+.branch{
+	width: 15%;
+	height:auto;
+	display: inline-block;
+	margin-left: 8%;
+	margin-top: 2%;
+}
+
+.sort{
+	margin:auto;
+	width: 20%;
+	height: 80px;
+	margin-top: 20px;
+}
+.collection{
+	height:auto;
+	margin: auto;
+	margin-top: 2%;
+}
+.choice{
+  padding: 8px;
+  font-size: 15px;
+  width: 80%;	
+  display: block;
+  margin: 0 auto;
+}
+.products{
+	width: 90%;
+	height:auto;
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+.box{
+	width: 20%;
+	height:auto;
+	margin: auto;
+	margin: 4% 0% 4% 4%;
+	display: inline-block;
+}
+.pimg{
+	width:auto;
+	height:auto;
+	margin: auto;
+	text-align: center;
+	border-right:  2px solid #B6B6B6;
+}
+#add{
+	background-color: #0288D1;
+}
+#delete{
+	background-color: #727272;
+}
+#add, #delete{
+	height: 2em;
+	border: 0;
+	color: #fff;
+	font-size: 1em;
+	margin-bottom: 2%;
+}
+#add:hover, #delete:hover{
+	text-decoration: none;
+	background-color: #000;
+	-webkit-transition: 0.5s ease-in-out;
+    transition:0.5s ease-in-out;
+}
+#button{
+	display: block;
+	width: 50%;
+	height: 2em;
+	border: 0;
+	background-color: #FF4511;
+	color: #fff;
+	font-size: 1em;
+}
+#button:hover{
+	text-decoration: none;
+	width: 80%;
+	-webkit-transition: 0.5s ease-in-out;
+    transition:0.5s ease-in-out;
+}
+.bottom{
+	width:100%;
+	height:auto;
+	background-color: #03A9F4;
+	text-align: center;
+}
+.logo{
+	width: 15%;
+	height: 10%;
+	margin: auto;
+	margin: 2% 0% 2% 0%;
+	display: inline-block;
+}

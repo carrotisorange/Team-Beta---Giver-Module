@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "en">
+	 <head>
+	   <link rel ="stylesheet"  type = "text/css" href = "resources/css/main.css">
+	   <link rel ="stylesheet"  type = "text/css" href = "resources/css/give.css">
+	   <link rel ="stylesheet"  type = "text/css" href = "resources/css/global.css">
+	   <script src="resources/js/jquery.min.js"></script>
+	   <script src="resources/js/notify.js"></script>
+       <script src="resources/js/giveInfo.js"></script>
+       <script type="text/javascript" src="resources/js/jquery.uploadPreview.min.js"></script>
+
+	 </head>
+	 <body>
+ 		<div class= "container">
+ 			<div class =" Menumain"><!--Menumain-->
+ 		  	  <div class = "scroll">
+                <div class = "title">
+ 		  		     <h1>Grabage</h1>
+ 		  	      </div>
+
+ 		  	      <nav>
+ 		  		     <ul class = "navigate">
+								 <form method="post" action="/logout">
+
+									 <button type="submit" class = "logout">Logout</button>
+																</form>
+                            <li><a href = "/giver">Home</a></li>
+                     </ul>
+ 		  		          		  	      </nav>
+            </div>
+
+ 		  	<div class = "Welcomelog">
+ 		  	 <h2 class = "name" id="Welcome"><%= user %></h2>
+
+ 		  	</div>
+
+
+ 		  	</div><!--end of Menumain-->
+
+ 		  	<div class= "Bodymain">
+
+ 		  	  <div class = "boxupload">
+						<form action="/giveprod" method="post" enctype="multipart/form-data">
+		 		  	  <div class = "give"><h2>Give the Stuff you Don't need</h2></div>
+		 		  	  <div class = "Uploadpic">
+		               <h3> Add your product image here </h3>
+		                <div id="image-preview">
+		                    <label for="image-upload" id="image-label">Choose File</label>
+		                    <input type="file" name="image" id="image-upload" />
+		                </div>
+		              </div>
+ 		  	  		<p id="give">Product Details</p>
+
+ 		  	  <input type="text" placeholder="Product Name" name="prodname" class="prodname">
+ 		  	  		<select class="catchoice" data-style="btn-info" name="selectCateg">
+								<optgroup label="Select Category">
+ 		  	  		<option selected disabled required>Category</option>
+    					<option value="Gadgets">Gadgets</option>
+    					<option value="Clothes">Clothes</option>
+    					<option value="Food">Food</option>
+    					<option value="Others" >Others</option>
+					</optgroup>
+					</select>
+						<input type = "submit" name = "Submit" class ="sign" value="Submit">
+				</form>
+
+ 		  	  </div>
+
+ 		  	 <div class ="bottom">
+                    <div class = "logo">
+                        <img src="resources/images/like.png" class = "logo">
+                        <h3>Like us on</h3>
+                        <img src="resources/images/facebook.png" class = "logo">
+                        <img src="resources/images/twitter.png" class = "logo">
+                    </div>
+                </div><!--end of bottom-->
+            </div><!--End of Bodymain-->
+
+            <!--footer-->
+            <footer class="footer-basic-centered">
+
+                <p class="footer-company-motto">Home Of Second Chances.</p>
+
+                <p class="footer-links">
+                    <a href="index.html">Home - </a>
+                    <a href="#">About - </a>
+                    <a href="#">Contact </a>
+                </p>
+
+                <p class="footer-company-name">TenderJuicy &copy; 2016</p>
+
+            </footer>
+
+ 		</div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $.uploadPreview({
+            input_field: "#image-upload",
+            preview_box: "#image-preview",
+            label_field: "#image-label"
+            });
+        });
+
+				document.getElementById('image-label').setAttribute('style','z-index: 99;');
+
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "localhost:8080/who", true);
+  xhttp.onreadystatechange = function()
+    {
+    if(xhttp.readyState == 4 && xhttp.status == 200) {
+        alert(http.responseText);
+    }
+}
+  xhttp.send();
+
+        </script>
+	 </body>
+</html>

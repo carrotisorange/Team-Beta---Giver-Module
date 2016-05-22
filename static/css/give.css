@@ -1,0 +1,53 @@
+.give{
+	width: 50%;
+	height: 100px;
+	text-align: center;
+	margin: auto;
+	border: solid 1px #000;
+	margin-top: 20px;
+}
+.Uploadpic{
+	border: solid 1px #000;
+	width:60%;
+	height: 300px;
+	margin: auto;
+	margin-top: 20px;
+}
+.box{
+	border: solid 1px #000;
+	width:50%;
+	height: 300px;
+	margin: auto;
+	margin-top: 20px;
+}
+input[type="text"].prodname
+{
+  float:left;
+  padding: 5px 5px;
+  font-size: 15px;
+  width: 50%;	
+  margin:5%;
+}
+textarea{
+	width:90%;
+	height:100px;
+	display: block;
+	padding: 12px 20px;
+    box-sizing: border-box;
+}
+.donate{
+	padding: 12px ;
+	display: block;
+	margin: auto;
+
+}
+.catchoice{
+  padding: 5px 5px;
+  font-size: 15px;
+  width: 20%;	
+  margin:5%;
+}
+
+
+
+	

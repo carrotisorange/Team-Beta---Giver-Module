@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+     <head>
+       <link rel ="stylesheet"  type = "text/css" href = "resources/css/main.css">
+       <link rel ="stylesheet"  type = "text/css" href = "resources/css/give.css">
+       <link rel ="stylesheet"  type = "text/css" href = "resources/css/global.css">
+       <script src="resources/js/jquery.min.js"></script>
+       <script src="resources/js/notify.js"></script>
+     </head>
+     <body>
+        <div class= "container">
+            <div class =" Menumain"><!--Menumain-->
+              <div class = "scroll">
+                <div class = "title">
+                     <h1>Grabage</h1>
+                  </div>
+
+                  <nav>
+                     <ul class = "navigate">
+                            <form method="post" action="/logout">
+									 		  	 <button type="submit" class = "logout">Logout</button>
+												 </form>
+                            <li><a href = "/giver">Home</a></li>
+                     </ul>
+                  </nav>
+            </div>
+
+            <div class = "Welcomelog">
+             <h2 class = "name"><%= user%></h2>
+            </div>
+
+
+            </div><!--end of Menumain-->
+
+            <div class= "Bodymain">
+                  <div class = "Prodname">
+                    <h1 class = "product"><%= description %></h1>
+                </div>
+
+                <div class = "Requests">
+                    <h2 class = "taker">Requests</h2>
+                      <div class ="roll"><% var i=0; %>
+                        <% results.forEach(function(resObj){ if(resObj.status != 'rejected' ){ %>
+                        <div class =  "takerdetails">
+                            <h5><%= resObj.fname+" "+resObj.lname+" wants to take your product" %></h5>
+                            <h5 class = "details">Profile:</h5>
+                            <p class = "details"><%= resObj.email %></p>
+                            <p class = "details"><%= resObj.contactNum %></p>
+                            <p class = "details"><%= resObj.reason %></p>
+                        </br>
+                            <div class = "take">
+                              <form action="/choose" method="post">
+                                <button type ="submit" id = "accept" name='accept' value="<%= resObj.requestId %>">Yes</button>
+                            </div>
+                        </div>
+                        <% } i++}); %>
+
+                      </div>
+
+                </div>
+
+                <div class = "Imgholder">
+                        <img src = "<%= img %>" alt = "">
+                </div>
+                <div class = "Gprofile">
+                    <table>
+                        <tr>
+                            <th colspan="2">Product Details</th>
+                        </tr>
+                        <tr>
+                            <td class = "post">Date Posted</td>
+                            <td class = "date"><%= datePosted %></td>
+                        </tr>
+                        <tr>
+                            <td class = "post">Location</td>
+                            <td class = "place"><%= location %></td>
+                        </tr>
+                        <tr>
+                            <td class = "post">Category</td>
+                            <td class = "category"><%= category %></td>
+                        </tr>
+                        <tr>
+                            <td class = "post">Owner</td>
+                            <td class = "Ownerid"><%= owner %></td>
+                        </tr>
+                        <tr>
+                            <td class = "post">Contact Number</td>
+                            <td class = "Contact"><%= cNumber %></td>
+                        </tr>
+                        <tr>
+                            <td class = "post">Email</td>
+                            <td class = "Email"><%= email %></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                </div><!--End of Bodymain-->
+
+                <div class = "bot"><!--bot-->
+                    <div class ="bottom"><!--bottom-->
+                    <div class = "logo">
+                        <img src="resources/images/like.png" class = "logo">
+                        <h3>Like us on</h3>
+                        <img src="resources/images/facebook.png" class = "logo">
+                        <img src="resources/images/twitter.png" class = "logo">
+                    </div>
+                     <!--footer-->
+                    <footer class="footer-basic-centered">
+                        <p class="footer-company-motto">Home Of Second Chances.</p>
+                        <p class="footer-links">
+                        <a href="index.html">Home - </a>
+                        <a href="#">About - </a>
+                        <a href="#">Contact </a>
+                         </p>
+                         <p class="footer-company-name">TenderJuicy &copy; 2016</p>
+                    </footer>
+                    </div><!--end of bottom-->
+               </div><!--end of bot-->
+        </div><!--end of container-->
+     </body>
+</html>

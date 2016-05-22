@@ -1,0 +1,130 @@
+/* Global designs*/
+*{
+	margin: 0 auto;
+}
+.container{
+	width: auto;
+	height: auto;
+}
+.menu{
+	width:100%;
+	height:500px;
+	border: solid #000 1px; 
+	background-color: #FA6900;
+}
+.Menumain{
+	background-color: #FA6900;
+}
+.title{
+	float: left;
+	width: 40%;
+	height:120px;
+	background-color: #E0E4CC;
+}
+nav{
+	padding: 10px;
+	float: right;
+	width: 40%;
+	height:100px;
+	border: solid #000 1px; 
+}
+
+/*notification bar*/
+.notifications {
+  float: right;
+  display:block;
+  position:relative;
+  width:80px;
+  height:80px;
+  background-color:white;
+  border-radius:50%;
+  margin-right:100px;
+}
+
+.notifications .toggle {
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+.notifications .toggle:before,
+.notifications .toggle:after {
+  content:'.';
+  display:block;
+  position:absolute;
+  left:35px;
+  width:10px;
+  background-color:#bdc3c7;
+  color:transparent;
+  border-radius:5px;
+}
+
+.notifications .toggle:before {
+  top:15px;
+  height:30px;
+}
+
+.notifications .toggle:after {
+  top:55px;
+  height:10px;
+}
+
+.notifications .messages {
+  display:block;
+  position:absolute;
+  top:100px;
+  left:-80px;
+  width:240px;
+  max-height:240px;
+}
+
+.notifications .messages:before {
+  content:'.';
+  display:block;
+  position:absolute;
+  margin-left:-10px;
+  left:50%;
+  top:-18px;
+  width:0;
+  height:0;
+  color:transparent;
+  border:10px solid black;
+  border-color:transparent transparent white;
+}
+
+.notifications .messages .message {
+  display:block;
+  position:relative;
+  padding:10px;
+  background-color:white;
+  color:black;
+  text-decoration:none;
+}
+
+.notifications .messages .message + .message {
+  border-top:1px solid #999;
+}
+
+/*for index.html*/
+.body{
+	width: 100%;
+	height:auto;
+	border: solid #000 1px; 
+}
+/*end*/
+/*for give, take and main html*/
+.Bodymain{
+	width: 100%;
+	height:auto;
+	border: solid #000 1px; 
+}
+/*end*/
+.footer{
+	
+	width: 100%;
+	height:300px;
+	border: solid #000 1px; 
+	clear: both;
+}
+/* End of Global designs*/

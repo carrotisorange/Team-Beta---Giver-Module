@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+	 <head>
+	   <link rel ="stylesheet"  type = "text/css" href = "resources/css/main.css">
+	   <link rel ="stylesheet"  type = "text/css" href = "resources/css/global.css">
+	   <script src="resources/js/jquery.min.js"></script>
+	   <script src="resources/js/notify.js"></script>
+	 </head>
+	 <body>
+ 		<div class= "container">
+ 			<div class =" Menumain"><!--Menumain-->
+ 		  	  <div class = "scroll">
+                <div class = "title">
+ 		  		     <h1>Grabage</h1>
+ 		  	      </div>
+            </div>
+
+ 		  	<div class = "Welcomelog">
+ 		  	 <h2 class = "name"><%= user %></h2>
+
+				 <form method="get" action="/give">
+					 <button type="submit" class="logout">Donate</button></form>
+ 		  	</div>
+
+ 		  	<div class = "search">
+					<form method="post" action="/logout">
+
+									 		  	 <button type="submit" class = "logout">Logout</button>
+												 </form>
+ 		  	</div>
+
+ 		  	</div><!--end of Menumain-->
+
+			<div class= "Bodymain">
+
+ 		  	<div class = "categories">
+ 		  		<div class = "collection">
+ 		  			<h3> Your Products </h3>
+ 		  		</div>
+
+
+ 		  		<div class = "products">
+								<% var i= 0;var i1=0; %>
+										<% results.forEach(function(resObj){ %>
+                    <div class = "box">
+                        <div class = "pimg">
+                            <h4 id="<%= resObj.description %>"><%= resObj.description %></h4>
+
+                            <img src="<%= img[i]  %>">
+
+															<form method="POST" action="/gived">
+															<input type="submit" id="button" name="<%= resObj.prodid %>" value="View Product"> </form>
+                        </div>
+                    </div>
+										<% i++}); %>
+			     </div><!--End of products-->
+
+ 		  		</div><!--End of categories-->
+
+                <div class ="bottom">
+                    <div class = "logo">
+                        <img src="resources/images/like.png" class = "logo">
+                        <h3>Like us on</h3>
+                        <img src="resources/images/facebook.png" class = "logo">
+                        <img src="resources/images/twitter.png" class = "logo">
+                    </div>
+                </div><!--end of Features-->
+
+ 		  	</div><!--End of Bodymain-->
+
+ 		  	<!--footer-->
+ 		  	<footer class="footer-basic-centered">
+				<p class="footer-company-motto">Home Of Second Chances.</p>
+				<p class="footer-links">
+					<a href="index.html">Home - </a>
+					<a href="#">About - </a>
+					<a href="#">Contact </a>
+				</p>
+				<p class="footer-company-name">TenderJuicy &copy; 2016</p>
+			</footer>
+			<!--end of footer-->
+ 		</div><!--end of container-->
+		<script type="text/javascript">
+		</script>
+	 </body>
+</html>

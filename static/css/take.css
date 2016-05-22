@@ -1,0 +1,98 @@
+.Prodname, .Imgholder, .Gprofile, .desc, .grab{
+	margin-top:10px;
+}
+.Prodname{
+	width:80%;
+	height: 100px;
+	border:solid #000 1px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.product{
+	text-align: center;
+}
+.Imgholder{
+	width:60%;
+	height: 650px;
+	border:solid #000 1px;
+	float: left;
+	margin-left: 3%;	
+
+}
+.preview{
+	width:95%;
+	height:500px;
+	border:solid #000 1px;
+	margin: auto;
+	margin-top:8px; 
+
+}
+.preview img{
+	border-radius: 0 !important;
+	width:95%;
+	height:470px;
+	border:solid #000 1px;
+	margin: auto;
+}
+.thumbnail{
+	width:95%;
+	height: 15%;
+	border:solid #000 1px;
+	margin: auto;
+	margin-top:8px;
+}
+.Gprofile{
+	width:30%;
+	height: auto;
+	border:solid #000 1px;
+	float: right;
+	margin-right: 3%;
+
+}
+.desc{
+	width:30%;
+	height: auto;
+	border:solid #000 1px;
+	float: right;
+	margin-right: 3%;
+}
+.about{
+	width:60%;
+	height: auto;
+	text-align: justify;
+	margin: auto;
+	border:solid #000 1px;
+}
+.grab{
+	width:auto;
+	height: auto;
+	border:solid #000 1px;
+}
+.get{
+	padding: 10px 15px;
+	font-size: 20px;
+	margin:auto;
+	display: block;
+
+}
+table{
+
+	border: 1px #000 solid;
+	margin: auto;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+tr{
+	border: 1px #000 solid;
+}
+td{
+	font-size: 18px;
+	width: 20%;	
+	height:20px;
+	text-align: center;
+	padding: 20px 20px;
+	margin:0;
+	background-color: #FFB;
+
+}
